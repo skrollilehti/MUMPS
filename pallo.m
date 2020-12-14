@@ -25,9 +25,6 @@ trace(vx,vy,vz)
 MAIN:
 
  s chars="$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,""^`'. "
- ;s chars=" .:-=+*#%@"
- ;w chars 
- 
 
  for y=100:-1:0 do
  .for x=0:1:100 do
@@ -37,17 +34,3 @@ MAIN:
  ..s c=$$trace(vx,vy,vz)
  ..w $EXTRACT(chars,70-(c*69\1)),$EXTRACT(chars,70-(c*69\1))
  .w "",!
- ;..w x_" "_y_" "_color_" "_color_" "_color,!
-
-
-
-;..if (c<0.1) w "  "
-;..if (c>=0.1)&(c<0.2) w ".."
-;..if (c>=0.2)&(c<0.3) w "::"
-;..if (c>=0.3)&(c<0.4) w "--"
-;..if (c>=0.4)&(c<0.5) w "=="
-;..if (c>=0.5)&(c<0.6) w "++"
-;..if (c>=0.6)&(c<0.7) w "**"
-;..if (c>=0.7)&(c<0.8) w "%%"
-;..if (c>=0.8)&(c<0.90) w "@@"
-;..if (c>=0.90) w "##"
