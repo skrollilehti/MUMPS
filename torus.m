@@ -40,9 +40,6 @@ trace(vx,vy,vz)
 MAIN:
 
  s chars="$@B%8&WM##oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,""^`'. "
- ;s chars=" .:-=+*#%@"
- ;w chars 
- 
 
  for y=100:-1:0 do
  .for x=0:1:100 do
