@@ -26,7 +26,7 @@ light(px,py,pz)
  ;s nz=1/(3**0.5) if pz<0 s nz=-1/(3**0.5)
  s c=(lx*nx)+(ly*ny)+(lz*nz)
  if c<0 s c=0
- q c*1.6 ; OMG HACK LOL
+ q c*1.6 ; Älä yritä tätä kotona
 
 trace(vx,vy,vz)
  s ret=0.1 s px=0 s py=0 s pz=-5
