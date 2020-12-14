@@ -21,9 +21,6 @@ light(px,py,pz)
  s lx=lx/lr s ly=ly/lr s lz=lz/lr
  s r=$$length(px,py,pz)
  s nx=px/r s ny=py/r s nz=pz/r 
- ;s nx=1/(3**0.5) if px<0 s nx=-1/(3**0.5)
- ;s ny=1/(3**0.5) if py<0 s ny=-1/(3**0.5)
- ;s nz=1/(3**0.5) if pz<0 s nz=-1/(3**0.5)
  s c=(lx*nx)+(ly*ny)+(lz*nz)
  if c<0 s c=0
  q c*1.6 ; Älä yritä tätä kotona
